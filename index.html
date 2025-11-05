@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salma Abu Odeh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="#profile">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle color theme">
+            &#127769;
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="#profile">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li class="mobile-theme">
+            <button class="theme-toggle" aria-label="Toggle color theme">
+              &#127769;
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="profile" class="reveal">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Salma <span>Abu Odeh</span></h1>
+        <h2 id="typing" class="section__text__p2"></h2>
+
+        <div class="btn-container">
+          <a class="btn btn-color-1" href="#projects">View My Work</a>
+          <a class="btn btn-color-2" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="section__pic-container">
+        <img src="images/me.png" alt="profile" class="profile-pic" />
+        <div class="pic-glow"></div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <p class="section__text__p1">Get to know me</p>
+      <h2 class="title">About Me</h2>
+
+      <div class="about-wrapper">
+        <div class="about-img">
+          <img src="images/aboutme.png" alt="About picture" class="about-pic" />
+          <div class="pic-glow about-glow"></div>
+        </div>
+
+        <div class="about-info">
+          <div class="about-cards">
+            <div class="about-card rgb">
+              <img src="images/education.png" class="icon" alt="" />
+              <h3>Education</h3>
+              <p>B.Sc Software Engineering<br />Bethlehem University</p>
+            </div>
+
+            <div class="about-card rgb">
+              <img src="images/checkmark.png" class="icon" alt="" />
+              <h3>Experience</h3>
+              <p>Projects • UI/UX • Problem Solving<br />IEEE Community</p>
+            </div>
+          </div>
+
+          <p class="about-text">
+            I build clean, responsive, accessible interfaces and enjoy turning
+            ideas into meaningful digital products. I love problem-solving,
+            applying design thinking, and continuously learning to create
+            impactful solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <p class="section__text__p1">What I work with</p>
+      <h2 class="title">Skills</h2>
+
+      <div class="experience-details-container">
+        <div class="article-container">
+          <article class="skill-card rgb">
+            <div class="skill-head">
+              <h3>Programming</h3>
+            </div>
+            <ul class="stack">
+              <li>Java</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>SQL/MySQL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card rgb">
+            <div class="skill-head">
+              <h3>Concepts</h3>
+            </div>
+            <ul class="stack">
+              <li>OOP</li>
+              <li>DS & Algo</li>
+              <li>DB Design</li>
+              <li>JavaFX</li>
+              <li>Git/GitHub</li>
+            </ul>
+          </article>
+
+          <article class="skill-card rgb">
+            <div class="skill-head">
+              <h3>Soft Skills</h3>
+            </div>
+            <ul class="stack">
+              <li>Teamwork</li>
+              <li>Leadership</li>
+              <li>Communication</li>
+              <li>Problem-Solving</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <p class="section__text__p1">My recent work</p>
+      <h2 class="title">Projects</h2>
+
+      <div class="project-cards">
+        <div class="details-container project-item rgb">
+          <img
+            src="images/project-3.png"
+            alt="Calculator App preview"
+            class="project-img"
+          />
+          <h3>Calculator App</h3>
+          <p>Simple, clean calculator built using HTML, CSS & JavaScript.</p><br>
+          <a
+            class="btn"
+            href="https://salma-abuodeh.github.io/Calculator-App/"
+            target="_blank"
+          >
+            View Live
+          </a>
+          <a
+            class="btn btn-color-2"
+            href="https://github.com/salma-abuodeh/Calculator-App"
+            target="_blank"
+          >
+            Code
+          </a>
+        </div>
+
+        <div class="details-container project-item rgb">
+          <img
+            src="images/project-2.png"
+            alt="Text to Speech preview"
+            class="project-img"
+          />
+          <h3>Text to Speech Converter</h3>
+          <p>Convert text to natural voices with selectable languages.</p>
+          <br>
+          <a
+            class="btn"
+            href="https://salma-abuodeh.github.io/Text-to-Speech-Converter-App/"
+            target="_blank"
+          >
+            View Live
+          </a>
+          <a
+            class="btn btn-color-2"
+            href="https://github.com/salma-abuodeh/Text-to-Speech-Converter-App"
+            target="_blank"
+          >
+            Code
+          </a>
+        </div>
+
+        <div class="details-container project-item rgb">
+          <img
+            src="images/project-1.png"
+            alt="To-Do List preview"
+            class="project-img"
+          />
+          <h3>To-Do List App</h3>
+          <p>Track your tasks with a clean UI and persistent storage.</p><br>
+          <a
+            class="btn"
+            href="https://salma-abuodeh.github.io/To-do-List-App/"
+            target="_blank"
+          >
+            View Live
+          </a>
+          <a
+            class="btn btn-color-2"
+            href="https://github.com/salma-abuodeh/To-do-List-App"
+            target="_blank"
+          >
+            Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <p class="section__text__p1">Get in touch</p>
+      <h2 class="title">Contact</h2>
+      <div class="contact-card">
+        <div class="contact-icon email" onclick="window.open('mailto:salmamahmoudao@gmail.com')">
+          <img src="images/email.png" alt="">
+        </div>
+
+        <div class="contact-icon" onclick="window.open('https://www.linkedin.com/in/salma-abu-odeh-724710318/', '_blank')">
+          <img src="images/linkedin.png" alt="">
+        </div>
+
+        <div class="contact-icon" onclick="window.open('https://github.com/salma-abuodeh', '_blank')">
+          <img src="images/github.png" alt="">
+        </div>
+      </div>
+
+      <p class="contact-note">Let's create something meaningful together &#x2728;</p>
+
+      <div class="bubbles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Salma Abu Odeh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
